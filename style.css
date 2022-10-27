@@ -1,0 +1,68 @@
+main, nav, header, article, section, footer{
+    border: 1px solid gray;
+    padding: 10px;
+}
+.nagykep img, .kep img {
+    width: 100%;
+    
+}
+.kiskep {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+nav {
+    background-color: lightgray;
+    text-transform: capitalize;
+    padding: 2px 10px;
+    margin: 0px;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+nav li {
+    list-style-type: none;   
+}
+nav a {
+    border-left: 1px solid gray;
+    padding: 20px;
+}
+nav a:link {
+    text-decoration: none;
+}
+nav a:visited{
+    text-decoration: none;
+    color: red; 
+}
+nav a:hover{
+    text-decoration: none;
+}
+nav a:active{
+    text-decoration: none;
+}
+#kezdo {
+    background-color: red;
+    color: white;
+}
+.kep {
+    border: 1px solid gray;
+    padding: 2px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 80% auto;
+}
+@media screen and (max-width:800px) {
+    .kiskep {
+        grid-template-columns:1fr;
+        gap: 10px;
+    }
+    
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        grid-template-columns: 1fr;
+    }
+}
