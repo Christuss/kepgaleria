@@ -14,22 +14,31 @@ main, nav, header, article, section, footer{
 nav {
     background-color: lightgray;
     text-transform: capitalize;
-    padding: 2px 10px;
-    margin: 0px;
+    padding: 0%;
+    display: grid;
+    grid-template-columns:4fr 1fr;
+}
+#masodik {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 nav ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
 }
 nav li {
-    list-style-type: none;   
+    list-style-type: none;
 }
 nav a {
     border-left: 1px solid gray;
-    padding: 20px;
+    padding: 20px; 
+    display: inline-block;
 }
 nav a:link {
     text-decoration: none;
+    color: red; 
 }
 nav a:visited{
     text-decoration: none;
@@ -37,22 +46,29 @@ nav a:visited{
 }
 nav a:hover{
     text-decoration: none;
+    color: white;
+    background-color: red;
 }
 nav a:active{
     text-decoration: none;
+    color: red; 
 }
 #kezdo {
     background-color: red;
     color: white;
 }
+#kezdo:hover{
+    background-color: white;
+    color: red;
+}
 .kep {
     border: 1px solid gray;
-    padding: 2px;
+    padding: 5px;
 }
-nav {
-    display: grid;
-    grid-template-columns: 80% auto;
+.kep:hover {
+    border: none;
 }
+
 @media screen and (max-width:800px) {
     .kiskep {
         grid-template-columns:1fr;
@@ -64,5 +80,8 @@ nav {
     }
     nav {
         grid-template-columns: 1fr;
+    }
+    #masodik {
+        grid-template-columns:1fr;
     }
 }
